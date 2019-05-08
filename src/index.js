@@ -7,6 +7,18 @@ sayHello('World');
 /**
  * require style imports
  */
+function appendMovieData(title, rating) {
+  var html = "";
+  html += `<div class='movieCard'>`;
+  html += `<h2>${title}</h2>`;
+  html += `<p>${rating}</p>`;
+  html += `</div>`;
+
+  return html
+}
+
+const $ = require("jquery");
+
 const {getMovies} = require('./api.js');
 
 getMovies().then((movies) => {
