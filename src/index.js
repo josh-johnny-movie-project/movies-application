@@ -35,10 +35,9 @@ getMovies().then((movies) => {
 
 
 $("#submit").click(function () {
-let newMovie =
-    { title: $("userTitle").val(),
-      rating: $("userRating").val(),
-    };
+  console.log('TEST');
+const newMovie =
+    { title: $("#userTitle").val(), rating: $("#userRating").val()};
 const url = '/api/movies';
 const options = {
   method: 'POST',
@@ -47,9 +46,9 @@ const options = {
   },
   body: JSON.stringify(newMovie),
 };
-
+  fetch(url, options)
+      .then()
+      .catch();
 });
-// fetch(url, options)
-//     .then()
-//     .catch();
+
 
