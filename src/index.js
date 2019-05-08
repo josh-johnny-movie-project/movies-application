@@ -20,16 +20,21 @@ getMovies().then((movies) => {
 });
 
 
-const blogPost = {title: 'Ajax Requests', body: 'Are a fun way to use JS!'};
-const url = '/posts';
+const newMovie =
+    {title: 'New Movie',
+      rating: "5",
+      id: "3"
+    };
+const url = '/api/movies';
 const options = {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
   },
-  body: JSON.stringify(blogPost),
+  body: JSON.stringify(newMovie),
 };
-fetch(url, options)
-    .then()
-    .catch();
+
+// fetch(url, options)
+//     .then()
+//     .catch();
 
