@@ -9,24 +9,33 @@
 <div>
     <label for="userTitle">Title :</label>
     <input id="userTitle" type="text">
-    <label for="rating">Rate :</label>
-    <select name="rating" id="rating">
+    <label for="userRating">Rate :</label>
+    <select name="userRating" id="userRating">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
     </select>
+    <button type="button" id="submit">Submit!</button>
 </div>
+
+
 
 <div id="add-movies">
 
 </div>
     <div class="container">
-        <h1>Loading...</h1>
+        <img src="giphy.gif" class="load">
+        <h1 class="load">Loading...</h1>
     </div>
 
     <script src="./main.js"></script>
 </body>
 <script src="jquery-2.2.4.js"></script>
+<script lang="javascript" type="text/javascript">
+    $(window).load(function() {
+        $(".container").fadeOut(".load");
+    });
+</script>
 </html>

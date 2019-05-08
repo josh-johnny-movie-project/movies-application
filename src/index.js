@@ -33,10 +33,11 @@ getMovies().then((movies) => {
 });
 
 
-const newMovie =
-    {title: 'New Movie',
-      rating: "5",
-      id: "3"
+
+$("#submit").click(function (user) {
+let newMovie =
+    {title: user
+      rating: user.val(),
     };
 const url = '/api/movies';
 const options = {
@@ -47,6 +48,7 @@ const options = {
   body: JSON.stringify(newMovie),
 };
 
+});
 // fetch(url, options)
 //     .then()
 //     .catch();
