@@ -34,10 +34,10 @@ getMovies().then((movies) => {
 
 
 
-$("#submit").click(function (user) {
+$("#submit").click(function () {
 let newMovie =
-    {title: user
-      rating: user.val(),
+    { title: $("userTitle").val(),
+      rating: $("userRating").val(),
     };
 const url = '/api/movies';
 const options = {
