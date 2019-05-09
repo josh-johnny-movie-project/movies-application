@@ -9,11 +9,12 @@ sayHello('World');
  */
 
 const appendMovieData = (title, rating, id) => {
-  var html = "";
+  let html = "";
   html += `<div id=${id} class='movieCard'>`;
   html += `<h4>${title}</h4>`;
   html += `<p>Rating: `  + `${rating}</p>`;
-  html += `<button type="button" class="editForm">Delete!</button>`;
+  html += `<button type="button" class="deleteMovie">Delete!</button>`;
+  html += `<button type="button" class="editForm">Edit</button>`;
   html += `</div>`;
   return html
 };
@@ -65,14 +66,9 @@ $.ajax("http://www.omdbapi.com/?t=jaws&apikey=f2e07699").done(function (data) {
 console.log(data);
 });
 
-getMovies().then((movies) => {
-  movies.forEach(({title, rating, id}) => {
-    console.log(id);
-  });
-});
 
-$("body").on('click', '.editForm', function () {
-  getMovies().then((movies) => {
+
+$(document).on('click', '.deleteMovie', function () {
     const url = '/api/movies/' + [$(this).parent("div").attr("id")];
     const options = {
       method: 'DELETE',
@@ -82,5 +78,8 @@ $("body").on('click', '.editForm', function () {
     };
     fetch(url, options)
         .then(upDateMovies)
-  });
 });
+
+
+
+
