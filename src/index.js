@@ -81,5 +81,39 @@ $(document).on('click', '.deleteMovie', function () {
 });
 
 
+//------------------------------------------------------------------------------------------------------//
+
+const upDateInfo = (movies) => {
+  getMovies().then((movies) => {
+    $('#add-movies').html('');
+    console.log('Here are all the movies:');
+    movies.forEach(({title, rating, id}) => {
+      console.log(`id#${id} - ${title} - rating: ${rating}`);
+      $('#add-movies').append(appendMovieData(title, rating, id));
+    });
+  }).catch((error) => {
+    alert('Oh no! Something went wrong.\nCheck the console for details.');
+    console.log(error);
+  });
+};
+
+$(document).on('click', '.editForm', function () {
+  const userEdit =
+      { title: $("#editTitle").val(),
+        rating: $("#editRating").val()
+      };
+  getMovies().then((movies) => {
+    const url = '/api/movies/' + [$(this).parent("div").attr("id")];
+    const options = {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userEdit),
+    };
+    fetch(url, options)
+        .then(upDateInfo)
+  });
+});
 
 
