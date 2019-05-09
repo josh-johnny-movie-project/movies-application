@@ -8,3 +8,22 @@ html, body {
     transform: translateY(-100%);
     text-align: center;
 }
+.movieCard{
+    border: 1px solid black;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 80%;
+    width: 20%;
+    padding: 3%;
+}
+#add-movies{
+    display: flex;
+    height: 35%;
+    margin-top: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top: solid black;
+    border-bottom: solid black;
+    justify-content: center;
+}
