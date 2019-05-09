@@ -6,37 +6,32 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-
-<!--User Add Movie-->
-<form>
-<div>
-    <label for="userTitle">Title :</label>
-    <input id="userTitle" type="text">
-    <label for="userRating">Rate :</label>
-    <select name="userRating" id="userRating">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-    <button type="button" id="submit">Submit!</button>
-</div>
-
-
 <!--Loading Feature-->
 <div id="container">
-        <img src="giphy.gif" class="load">
-        <h1 class="load">Loading...</h1>
+    <img src="giphy.gif" class="load">
+    <h1 class="load">Loading...</h1>
 </div>
-
-</form>
 
 
 <div id="add-movies">
 </div>
-
-
+<!--User Add Movie-->
+<h2>Add a movie?</h2>
+<form>
+    <div>
+        <label for="userTitle">Title :</label>
+        <input id="userTitle" type="text">
+        <label for="userRating">Rate :</label>
+        <select name="userRating" id="userRating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button type="button" id="submit">Submit!</button>
+    </div>
+</form>
     <script src="./main.js"></script>
 </body>
 <script src="jquery-2.2.4.js"></script>

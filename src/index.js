@@ -39,7 +39,7 @@ const {getMovies} = require('./api.js');
 $(function() {
   upDateMovies();
 });
-
+//slide feature for edit button
 $(document).on('click', '.slide', function () {
   $(this).next().slideToggle(1000);
 });
@@ -48,6 +48,7 @@ $(document).on('click', '.slide', function () {
 
 const upDateMovies = () => {
   getMovies().then((movies) => {
+    movies.length = 3;
     $('#add-movies').html('');
     console.log('Here are all the movies:');
     movies.forEach(({title, rating, id}) => {
