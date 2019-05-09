@@ -27,6 +27,7 @@ $(function() {
 
 const upDateMovies = () => {
   getMovies().then((movies) => {
+    $('#add-movies').html('');
     console.log('Here are all the movies:');
     movies.forEach(({title, rating, id}) => {
       console.log(`id#${id} - ${title} - rating: ${rating}`);
