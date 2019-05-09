@@ -72,8 +72,8 @@ getMovies().then((movies) => {
 });
 
 $("body").on('click', '.editForm', function () {
-  getMovies().then((movies) => {
-    const url = '/api/movies/' + movies[$(this.id) - 1 + ''].id;
+  getMovies().then(() => {
+    const url = '/api/movies/' + this.id;
     const options = {
       method: 'DELETE',
     };
