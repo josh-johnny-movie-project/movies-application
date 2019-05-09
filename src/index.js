@@ -14,7 +14,20 @@ const appendMovieData = (title, rating, id) => {
   html += `<h4>${title}</h4>`;
   html += `<p>Rating: `  + `${rating}</p>`;
   html += `<button type="button" class="deleteMovie">Delete!</button>`;
-  html += `<button type="button" class="editForm">Edit</button>`;
+  html += `<button type="button" class="slide">Edit</button>`;
+  html +=  `<div id="userEdit">`;
+  html +=  `<label for="editTitle">Edit Title :</label>`;
+  html +=  `<input id="editTitle" type="text">`;
+  html +=  `<label for="editRating">Edit Rating :</label>`;
+  html +=  `<select name="editRating" id="editRating">`;
+  html +=  `<option value="1">1</option>`;
+  html +=  `<option value="2">2</option>`;
+  html +=  `<option value="3">3</option>`;
+  html +=  `<option value="4">4</option>`;
+  html +=  `<option value="5">5</option>`;
+  html +=  `</select>`;
+  html += `<button type="button" class="editForm">Post</button>`;
+  html +=  `</div>`;
   html += `</div>`;
   return html
 };
@@ -26,6 +39,12 @@ const {getMovies} = require('./api.js');
 $(function() {
   upDateMovies();
 });
+
+$(document).on('click', '.slide', function () {
+  $(this).next().slideToggle(1000);
+});
+
+
 
 const upDateMovies = () => {
   getMovies().then((movies) => {

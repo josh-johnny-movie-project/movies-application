@@ -26,3 +26,6 @@ html, body {
     border-bottom: solid black;
     justify-content: center;
 }
+#userEdit{
+    display: none;
+}
