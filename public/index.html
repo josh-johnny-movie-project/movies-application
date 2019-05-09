@@ -8,6 +8,7 @@
 <body>
 
 <!--User Add Movie-->
+<form>
 <div>
     <label for="userTitle">Title :</label>
     <input id="userTitle" type="text">
@@ -21,24 +22,30 @@
     </select>
     <button type="button" id="submit">Submit!</button>
 </div>
+<!--Loading Feature-->
+<div id="container">
+        <img src="giphy.gif" class="load">
+        <h1 class="load">Loading...</h1>
+</div>
+</form>
+    <div id="userAdd">
 
+    </div>
+<form>
+
+</form>
 
 
 <div id="add-movies">
 </div>
 
-<!--Loading Feature-->
-    <div class="container">
-        <img src="giphy.gif" class="load">
-        <h1 class="load">Loading...</h1>
-    </div>
 
     <script src="./main.js"></script>
 </body>
 <script src="jquery-2.2.4.js"></script>
 <script lang="javascript" type="text/javascript">
     $(window).load(function() {
-        $(".container").fadeOut(".load");
+        $(".load").fadeOut(1000);
     });
 </script>
 </html>

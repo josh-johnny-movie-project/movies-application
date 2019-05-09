@@ -2,11 +2,10 @@ html, body {
     height: 100%;
 }
 
-.container {
-    position: relative;
-    top: 50%;
-    transform: translateY(-100%);
+#container {
     text-align: center;
+    position: center;
+
 }
 .movieCard{
     border: 1px solid black;

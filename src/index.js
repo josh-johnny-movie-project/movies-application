@@ -8,11 +8,12 @@ sayHello('World');
  * require style imports
  */
 
-const appendMovieData = (title, rating) => {
+const appendMovieData = (title, rating, id) => {
   var html = "";
-  html += `<div class='movieCard'>`;
+  html += `<div id=${id} class='movieCard'>`;
   html += `<h4>${title}</h4>`;
   html += `<p>Rating: `  + `${rating}</p>`;
+  html += `<button type="button" class="editForm">Edit</button>`;
   html += `</div>`;
   return html
 };
@@ -31,7 +32,7 @@ const upDateMovies = () => {
     console.log('Here are all the movies:');
     movies.forEach(({title, rating, id}) => {
       console.log(`id#${id} - ${title} - rating: ${rating}`);
-      $('#add-movies').append(appendMovieData(title, rating));
+      $('#add-movies').append(appendMovieData(title, rating, id));
     });
   }).catch((error) => {
     alert('Oh no! Something went wrong.\nCheck the console for details.');
@@ -60,3 +61,10 @@ const options = {
 });
 
 
+$.ajax("http://www.omdbapi.com/?t=jaws&apikey=f2e07699").done(function (data) {
+console.log(data);
+});
+
+$(".editform").click(function () {
+  $("")
+});
