@@ -13,7 +13,7 @@ const appendMovieData = (title, rating, id) => {
   html += `<div id=${id} class='movieCard'>`;
   html += `<h4>${title}</h4>`;
   html += `<p>Rating: `  + `${rating}</p>`;
-  html += `<button type="button" class="editForm">Edit</button>`;
+  html += `<button type="button" class="editForm">Delete!</button>`;
   html += `</div>`;
   return html
 };
@@ -73,12 +73,14 @@ getMovies().then((movies) => {
 
 $("body").on('click', '.editForm', function () {
   getMovies().then((movies) => {
-    const url = '/api/movies/' + movies[$(this.id) - 1 + ''].id;
+    const url = '/api/movies/' + [$(this).parent("div").attr("id")];
     const options = {
       method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
     };
     fetch(url, options)
         .then(upDateMovies)
-        .catch();
   });
 });
