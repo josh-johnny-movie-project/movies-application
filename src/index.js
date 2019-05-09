@@ -65,6 +65,20 @@ $.ajax("http://www.omdbapi.com/?t=jaws&apikey=f2e07699").done(function (data) {
 console.log(data);
 });
 
-$(".editform").click(function () {
-  $("")
+getMovies().then((movies) => {
+  movies.forEach(({title, rating, id}) => {
+    console.log(id);
+  });
+});
+
+$("body").on('click', '.editForm', function () {
+  getMovies().then((movies) => {
+    const url = '/api/movies/' + movies[$(this.id) - 1 + ''].id;
+    const options = {
+      method: 'DELETE',
+    };
+    fetch(url, options)
+        .then(upDateMovies)
+        .catch();
+  });
 });
