@@ -9,11 +9,12 @@ sayHello('World');
  * require style imports
  */
 
-const appendMovieData = (title, rating, id) => {
+const appendMovieData = (title, imdbRating, id, Poster) => {
     let html = "";
     html += `<div id=${id} class='movieCard'>`;
+    html += `<img src="${Poster}" class="posters">`;
     html += `<h4>${title}</h4>`;
-    html += `<p>Rating: ` + `${rating}</p>`;
+    html += `<p>Rating: ` + `${imdbRating}</p>`;
     html += `<button type="button" class="deleteMovie">Delete!</button>`;
     html += `<button type="button" class="slide">Edit</button>`;
     html += `<div id="userEdit">`;
@@ -28,7 +29,6 @@ const appendMovieData = (title, rating, id) => {
     html += `<option value="4">4</option>`;
     html += `<option value="5">5</option>`;
     html += `</select>`;
-    html += `</div>`;
     html += `</div>`;
     return html
 };
@@ -48,12 +48,12 @@ $(document).on('click', '.slide', function () {
 
 const upDateMovies = () => {
     getMovies().then((movies) => {
-        movies.length = 3;
+        movies.length = 4;
         $('#add-movies').html('');
         console.log('Here are all the movies:');
-        movies.forEach(({Title, rating, id}) => {
-            console.log(`id#${id} - ${Title} - rating: ${rating}`);
-            $('#add-movies').append(appendMovieData(Title, rating, id));
+        movies.forEach(({Title, imdbRating, id, Poster}) => {
+            console.log(`id#${id} - ${Title} - rating: ${imdbRating} - ${Poster}`);
+            $('#add-movies').append(appendMovieData(Title, imdbRating, id, Poster));
         });
     }).catch((error) => {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
@@ -108,9 +108,9 @@ $("#submit").click(function () {
         getMovies().then((movies) => {
             $('#add-movies').html('');
             console.log('Here are all the movies:');
-            movies.forEach(({title, rating, id}) => {
-                console.log(`id#${id} - ${title} - rating: ${rating}`);
-                $('#add-movies').append(appendMovieData(title, rating, id));
+            movies.forEach(({title, imdbRating, id, Poster}) => {
+                console.log(`id#${id} - ${title} - rating: ${imdbRating} - ${Poster}`);
+                $('#add-movies').append(appendMovieData(title, imdbRating, id, Poster));
             });
         }).catch((error) => {
             alert('Oh no! Something went wrong.\nCheck the console for details.');

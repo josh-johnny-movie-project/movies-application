@@ -12,27 +12,12 @@ html, body {
     display: inline-block;
     margin-left: 3%;
     margin-right: 3%;
-    height: 80%;
+    height: 325px;
     width: 20%;
     max-width: 150px;
     padding: 3%;
     background-color: darkslategray;
     color: white;
-    opacity: 0.5;
-}
-.movieCard:hover{
-    border: 1px solid black;
-    display: inline-block;
-    margin-left: 3%;
-    margin-right: 3%;
-    height: 80%;
-    width: 20%;
-    max-width: 200px;
-    padding: 3%;
-    background-color: darkslategray;
-    color: white;
-    opacity: 1;
-    transition: ease 2s;
 }
 #add-movies{
     display: flex;
@@ -46,4 +31,7 @@ html, body {
 }
 #userEdit{
     display: none;
+}
+.posters {
+    width: 125px;
 }
