@@ -1,5 +1,11 @@
-html, body {
+html {
     height: 100%;
+}
+#curtain {
+    position: absolute;
+    width: 1347px;
+    top: -328px;
+    left: -45px;
 }
 
 #container {
@@ -8,7 +14,7 @@ html, body {
 
 }
 .movieCard{
-    border: 1px solid black;
+    border: 2px solid black;
     display: inline-block;
     margin-left: 3%;
     margin-right: 3%;
@@ -16,17 +22,15 @@ html, body {
     width: 20%;
     max-width: 150px;
     padding: 3%;
-    background-color: darkslategray;
+    background-color: #940701;
     color: white;
+    position: relative;
+
 }
 #add-movies{
     display: flex;
-    height: 50%;
-    margin-top: 20%;
     padding-top: 5%;
     padding-bottom: 5%;
-    border-top: solid black;
-    border-bottom: solid black;
     justify-content: center;
 }
 #userEdit{
@@ -34,7 +38,11 @@ html, body {
 }
 .posters {
     width: 125px;
+    height: 172px;
 }
 .movieTitle{
     margin-top: 0;
+}
+#userInput {
+
 }

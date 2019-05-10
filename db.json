@@ -1,106 +1,65 @@
 {
   "movies": [
     {
-      "Title": "It",
-      "Year": "2017",
-      "Rated": "R",
-      "Released": "08 Sep 2017",
-      "Runtime": "135 min",
-      "Genre": "Horror, Thriller",
-      "Director": "Andy Muschietti",
-      "Writer": "Chase Palmer (screenplay by), Cary Joji Fukunaga (screenplay by), Gary Dauberman (screenplay by), Stephen King (based on the novel by)",
-      "Actors": "Jaeden Martell, Jeremy Ray Taylor, Sophia Lillis, Finn Wolfhard",
-      "Plot": "In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.",
-      "Language": "English",
-      "Country": "USA, Canada",
-      "Awards": "4 wins & 30 nominations.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BZDVkZmI0YzAtNzdjYi00ZjhhLWE1ODEtMWMzMWMzNDA0NmQ4XkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1_SX300.jpg",
+      "Title": "Casablanca",
+      "Year": "1942",
+      "Rated": "PG",
+      "Released": "23 Jan 1943",
+      "Runtime": "102 min",
+      "Genre": "Drama, Romance, War",
+      "Director": "Michael Curtiz",
+      "Writer": "Julius J. Epstein (screenplay), Philip G. Epstein (screenplay), Howard Koch (screenplay), Murray Burnett (play), Joan Alison (play)",
+      "Actors": "Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains",
+      "Plot": "A cynical American expatriate struggles to decide whether or not he should help his former lover and her fugitive husband escape French Morocco.",
+      "Language": "English, French, German, Italian",
+      "Country": "USA",
+      "Awards": "Won 3 Oscars. Another 5 wins & 9 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BY2IzZGY2YmEtYzljNS00NTM5LTgwMzUtMzM1NjQ4NGI0OTk0XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "7.4/10"
+          "Value": "8.5/10"
         },
         {
           "Source": "Rotten Tomatoes",
-          "Value": "85%"
+          "Value": "97%"
         },
         {
           "Source": "Metacritic",
-          "Value": "69/100"
+          "Value": "100/100"
         }
       ],
-      "Metascore": "69",
-      "imdbRating": "7.4",
-      "imdbVotes": "347,053",
-      "imdbID": "tt1396484",
+      "Metascore": "100",
+      "imdbRating": "8.5",
+      "imdbVotes": "471,670",
+      "imdbID": "tt0034583",
       "Type": "movie",
-      "DVD": "09 Jan 2018",
-      "BoxOffice": "$326,898,358",
+      "DVD": "15 Feb 2000",
+      "BoxOffice": "N/A",
       "Production": "Warner Bros. Pictures",
-      "Website": "http://www.Itthemovie.com",
+      "Website": "https://www.warnerbros.com/casablanca",
       "Response": "True",
-      "id": 2
+      "id": 1
     },
     {
-      "Title": "Toy Story",
-      "Year": "1995",
-      "Rated": "G",
-      "Released": "22 Nov 1995",
-      "Runtime": "81 min",
-      "Genre": "Animation, Adventure, Comedy, Family, Fantasy",
-      "Director": "John Lasseter",
-      "Writer": "John Lasseter (original story by), Pete Docter (original story by), Andrew Stanton (original story by), Joe Ranft (original story by), Joss Whedon (screenplay by), Andrew Stanton (screenplay by), Joel Cohen (screenplay by), Alec Sokolow (screenplay by)",
-      "Actors": "Tom Hanks, Tim Allen, Don Rickles, Jim Varney",
-      "Plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+      "Title": "Star Wars: Episode IV - A New Hope",
+      "Year": "1977",
+      "Rated": "PG",
+      "Released": "25 May 1977",
+      "Runtime": "121 min",
+      "Genre": "Action, Adventure, Fantasy, Sci-Fi",
+      "Director": "George Lucas",
+      "Writer": "George Lucas",
+      "Actors": "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing",
+      "Plot": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.",
       "Language": "English",
       "Country": "USA",
-      "Awards": "Nominated for 3 Oscars. Another 23 wins & 17 nominations.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg",
+      "Awards": "Won 6 Oscars. Another 50 wins & 28 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
       "Ratings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "8.3/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "100%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "95/100"
-        }
-      ],
-      "Metascore": "95",
-      "imdbRating": "8.3",
-      "imdbVotes": "783,232",
-      "imdbID": "tt0114709",
-      "Type": "movie",
-      "DVD": "20 Mar 2001",
-      "BoxOffice": "N/A",
-      "Production": "Buena Vista",
-      "Website": "http://www.disney.com/ToyStory",
-      "Response": "True",
-      "id": 3
-    },
-    {
-      "Title": "Iron Man",
-      "Year": "2008",
-      "Rated": "PG-13",
-      "Released": "02 May 2008",
-      "Runtime": "126 min",
-      "Genre": "Action, Adventure, Sci-Fi",
-      "Director": "Jon Favreau",
-      "Writer": "Mark Fergus (screenplay), Hawk Ostby (screenplay), Art Marcum (screenplay), Matt Holloway (screenplay), Stan Lee (characters), Don Heck (characters), Larry Lieber (characters), Jack Kirby (characters)",
-      "Actors": "Robert Downey Jr., Terrence Howard, Jeff Bridges, Gwyneth Paltrow",
-      "Plot": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
-      "Language": "English, Persian, Urdu, Arabic, Hungarian",
-      "Country": "USA, Canada",
-      "Awards": "Nominated for 2 Oscars. Another 20 wins & 65 nominations.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg",
-      "Ratings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "7.9/10"
+          "Value": "8.6/10"
         },
         {
           "Source": "Rotten Tomatoes",
@@ -108,20 +67,61 @@
         },
         {
           "Source": "Metacritic",
-          "Value": "79/100"
+          "Value": "90/100"
         }
       ],
-      "Metascore": "79",
-      "imdbRating": "7.9",
-      "imdbVotes": "854,168",
-      "imdbID": "tt0371746",
+      "Metascore": "90",
+      "imdbRating": "8.6",
+      "imdbVotes": "1,109,357",
+      "imdbID": "tt0076759",
       "Type": "movie",
-      "DVD": "30 Sep 2008",
-      "BoxOffice": "$318,298,180",
-      "Production": "Paramount Pictures",
-      "Website": "http://www.ironmanmovie.com/",
+      "DVD": "21 Sep 2004",
+      "BoxOffice": "N/A",
+      "Production": "20th Century Fox",
+      "Website": "http://www.starwars.com/episode-iv/",
       "Response": "True",
-      "id": 4
+      "id": 2
+    },
+    {
+      "Title": "The Avengers",
+      "Year": "2012",
+      "Rated": "PG-13",
+      "Released": "04 May 2012",
+      "Runtime": "143 min",
+      "Genre": "Action, Adventure, Sci-Fi",
+      "Director": "Joss Whedon",
+      "Writer": "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
+      "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+      "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "Language": "English, Russian, Hindi",
+      "Country": "USA",
+      "Awards": "Nominated for 1 Oscar. Another 38 wins & 79 nominations.",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+      "Ratings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "92%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "69/100"
+        }
+      ],
+      "Metascore": "69",
+      "imdbRating": "8.1",
+      "imdbVotes": "1,165,317",
+      "imdbID": "tt0848228",
+      "Type": "movie",
+      "DVD": "25 Sep 2012",
+      "BoxOffice": "$623,279,547",
+      "Production": "Walt Disney Pictures",
+      "Website": "http://marvel.com/avengers_movie",
+      "Response": "True",
+      "id": 3
     }
   ]
 }

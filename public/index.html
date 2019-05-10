@@ -6,34 +6,27 @@
     <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
+<img src="curtain2.png" id="curtain">
 <!--Loading Feature-->
+
+<h1 style="text-align: center">Movies ¯\_(ツ)_/¯</h1>
+
+<div id="add-movies"></div>
 <div id="container">
     <img src="giphy.gif" class="load">
     <h1 class="load">Loading...</h1>
 </div>
-
-
-<div id="add-movies">
-</div>
-<!--User Add Movie-->
 <h2>Add a movie?</h2>
+<!--User Add Movie-->
 <form>
-    <div>
+    <div id="userInput">
         <label for="userTitle">Title :</label>
         <input id="userTitle" type="text">
-        <label for="userRating">Rate :</label>
-        <select name="userRating" id="userRating">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
         <button type="button" id="submit">Submit!</button>
     </div>
 </form>
-    <script src="./main.js"></script>
 </body>
+    <script src="./main.js"></script>
 <script src="jquery-2.2.4.js"></script>
 <script lang="javascript" type="text/javascript">
     $(window).load(function() {

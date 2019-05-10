@@ -136,5 +136,3 @@ $("#submit").click(function () {
                     .then(upDateInfo)
             });
     });
-
-
