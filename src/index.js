@@ -82,7 +82,7 @@ $("#submit").click(function () {
                 .then(upDateMovies)
                 .catch();
         });
-
+});
 
     $.ajax("http://www.omdbapi.com/?t=jaws&apikey=f2e07699").done(function (data) {
         console.log(data);
@@ -140,6 +140,5 @@ $("#submit").click(function () {
                     .then(upDateInfo)
             });
     });
-});
 
 
