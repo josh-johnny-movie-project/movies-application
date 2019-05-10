@@ -12,8 +12,8 @@ sayHello('World');
 const appendMovieData = (title, imdbRating, id, Poster) => {
     let html = "";
     html += `<div id=${id} class='movieCard'>`;
+    html += `<h4 class="movieTitle">${title}</h4>`;
     html += `<img src="${Poster}" class="posters">`;
-    html += `<h4>${title}</h4>`;
     html += `<p>Rating: ` + `${imdbRating}</p>`;
     html += `<button type="button" class="deleteMovie">Delete!</button>`;
     html += `<button type="button" class="slide">Edit</button>`;
@@ -21,14 +21,6 @@ const appendMovieData = (title, imdbRating, id, Poster) => {
     html += `<label for="editTitle">Edit Title :</label>`;
     html += `<button type="button" class="editForm">Post</button>`;
     html += `<input id="editTitle" type="text">`;
-    html += `<label for="editRating">Edit Rating :</label>`;
-    html += `<select name="editRating" id="editRating">`;
-    html += `<option value="1">1</option>`;
-    html += `<option value="2">2</option>`;
-    html += `<option value="3">3</option>`;
-    html += `<option value="4">4</option>`;
-    html += `<option value="5">5</option>`;
-    html += `</select>`;
     html += `</div>`;
     return html
 };
@@ -42,13 +34,17 @@ $(function () {
 });
 //slide feature for edit button
 $(document).on('click', '.slide', function () {
-    $(this).next().slideToggle(1000);
+    $(this).next().slideToggle(1500);
+    $(this).siblings('img').slideToggle(1500);
+    $(this).siblings('button').attr('class', 'deleteMovie').fadeToggle(1000);
+    $(this).siblings('p').fadeToggle(1000)
+
 });
 
 
 const upDateMovies = () => {
     getMovies().then((movies) => {
-        movies.length = 4;
+        movies.length = 3;
         $('#add-movies').html('');
         console.log('Here are all the movies:');
         movies.forEach(({Title, imdbRating, id, Poster}) => {

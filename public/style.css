@@ -12,7 +12,7 @@ html, body {
     display: inline-block;
     margin-left: 3%;
     margin-right: 3%;
-    height: 325px;
+    height: 80%;
     width: 20%;
     max-width: 150px;
     padding: 3%;
@@ -21,7 +21,7 @@ html, body {
 }
 #add-movies{
     display: flex;
-    height: 35%;
+    height: 50%;
     margin-top: 20%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -34,4 +34,7 @@ html, body {
 }
 .posters {
     width: 125px;
+}
+.movieTitle{
+    margin-top: 0;
 }
